@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
+				content="ie=edge">
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<title>Bad Apple Renderer</title>
+	<link rel="stylesheet"
+				href="/style.css">
+</head>
+<body>
+	<header>
+		<h1>Bad Apple Renderer</h1>
+		<p>FFmpeg WASM + TypeScript + Emoji Frames</p>
+	</header>
+	
+	<main>
+		<div class="progress-wrapper">
+			<div id="progress" class="progress-bar"></div>
+		</div>
+		
+		<section class="controls">
+			<label class="file-input">
+				<span>Select Video</span>
+				<input id="file" type="file" accept="video/*" />
+			</label>
+			
+			<button id="playBtn" disabled>Play</button>
+			<button id="pauseBtn" disabled>Pause</button>
+		</section>
+		
+		<section class="output-container">
+			<pre id="output"></pre>
+		</section>
+	</main>
+</body>
+<script type="module" src="/src/main.ts"></script>
+</html>
